@@ -5,8 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class MyController {
+
 	@RequestMapping("/welcome.htm")
 	public String getWelcomePage() {
+		System.out.println("Welcome");
 		return "welcome";
 	}
 
